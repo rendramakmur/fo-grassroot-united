@@ -3,6 +3,7 @@ import Banner from "../components/Banner"
 import GameList from "../components/GameList"
 import raiseToast from "../helpers/raiseToast"
 import fetchData from "../helpers/fetchData"
+import Quote from "../components/Quote"
 
 export default function Home() {
   const [games, setGames] = useState()
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <main className="mx-auto md:max-w-md h-screen w-screen">
       <Banner />
+      <Quote />
       <GameList games={games} />
     </main>
   )

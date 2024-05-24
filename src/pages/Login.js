@@ -67,12 +67,8 @@ export default function Login() {
 
   return (
     <section>
-      <div className="">
+      <div className="mt-5">
         <div className="flex flex-col items-center px-6 py-8 mx-auto h-screen">
-            <Link to="/" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 py-10">
-              <p>Logo</p>
-              {/* <Image src="/logo-img.png" width={100} height={100} alt="grassroot united fc logo" priority="true"></Image> */}
-            </Link>
             <div className="px-10 space-y-4 w-full">
                 <h1 className="text-2xl font-black leading-tight tracking-tight text-gray-900">
                     Sign in

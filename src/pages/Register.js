@@ -173,9 +173,9 @@ export default function Register({ occupation, gender }) {
 
   return (
     <section>
-      <div className="pb-10 pt-5">
+      <div className="pb-10 mt-5">
         { isLoading ? <LoadingPage /> : <></> }
-        <div className="flex flex-col items-center px-6 py-8 mx-auto h-fit">
+        <div className="flex flex-col items-center px-6 mx-auto h-fit">
           <div className="p-6 space-y-4">
               <h1 className="text-2xl font-black leading-tight tracking-tight text-gray-900">
                   Register

@@ -42,9 +42,9 @@ export default function GameCard({ data }) {
     <div className="border shadow-md p-5 rounded-lg text-xsm my-5">
       <div className="pb-4 w-full">
         <div className="flex items-center justify-between">
-          <p className="text-lg font-black overflow-x-auto">{data?.venueName}</p>
+          <p className=" text-lg font-black overflow-x-auto">{data?.venueName}</p>
           <Link to={mapUrl} target="_blank" className="text-center mx-2 text-white text-xs">
-            <img src="/gmap.svg" className="shadow-md" width={25} height={25} alt="grassroot united fc logo" priority="true"></img>
+            <img src="/gmap.svg" className="shadow-md" width={50} height={50} alt="grassroot united fc logo" priority="true"></img>
           </Link>
         </div>
       </div>

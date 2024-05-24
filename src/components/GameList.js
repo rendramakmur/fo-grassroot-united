@@ -41,7 +41,7 @@ export default function GameList({ games }) {
 
   return (
     <section>
-      <div className="px-6 py-8 mx-auto h-fit">
+      <div className="px-6 py-8 mx-auto h-fit shadow-md">
         { isLoading ? <LoadingPage /> : <></> }
         <h1 className="block mb-3 text-2xl font-black leading-tight tracking-tight text-gray-900">
             Game List

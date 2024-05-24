@@ -14,6 +14,9 @@ module.exports = {
         'xs': '.60rem',
         'xsm': '.75rem',
       },
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+      }
     },
   },
   plugins: [],

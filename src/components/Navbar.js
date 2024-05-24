@@ -51,7 +51,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between py-4">
                 {/* Logo */}
                 <Link to="/" className="flex items-center space-x-2">
-                  <img src="/logo-navbar.svg" width={50} height={50} alt="grassroot united fc logo" priority="true"></img>
+                  <img src="/grassroot-logo.svg" width={60} height={60} alt="grassroot united fc logo" priority="true"></img>
                 </Link>
 
                 {/* Burger Icon */}
