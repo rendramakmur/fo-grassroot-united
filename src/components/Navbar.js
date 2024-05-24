@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-4">
                 {/* Logo */}
-                <Link href="/" className="flex items-center space-x-2">
+                <Link to="/" className="flex items-center space-x-2">
                   <img src="/logo-navbar.svg" width={50} height={50} alt="grassroot united fc logo" priority="true"></img>
                 </Link>
 

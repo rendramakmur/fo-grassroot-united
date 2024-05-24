@@ -95,7 +95,7 @@ export default function Register({ occupation, gender }) {
         setOccupationList(occupationResponse?.data)
         setGenderList(genderResponse?.data)
       } catch (error) {
-        console.log('An error has occured:', error)
+        console.error('An error has occurred:', error)
         raiseToast('error', 'An error occurred. Please try again later.')
       }
     }
