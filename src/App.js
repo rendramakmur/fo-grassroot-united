@@ -1,13 +1,14 @@
-import React from 'react';
-import Home from './pages/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react'
+import Home from './pages/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import { Provider } from "react-redux";
-import { store, persistor } from './store';
-import Navbar from './components/Navbar';
-import Login from './pages/Login';
-import 'react-toastify/dist/ReactToastify.css';
+import { Provider } from "react-redux"
+import { store, persistor } from './store'
+import Navbar from './components/Navbar'
+import 'react-toastify/dist/ReactToastify.css'
 import { PersistGate } from "redux-persist/integration/react"
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
           <Router>
             <Navbar />
             <Routes>
-              <Route path='/login' element={<Login />}></Route>
-              <Route path='/' element={<Home />}></Route>
+              <Route path='/register' element={<Register />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/' element={<Home />} />
             </Routes>
           </Router>
           <ToastContainer />
