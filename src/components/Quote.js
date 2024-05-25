@@ -10,16 +10,16 @@ export default function Quote() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, [])
+  }, [words.length])
 
 
   return (
-    <div className="h-1/4 flex place-content-center items-center shadow-md bg-[#FF3130] ">
+    <div className=" h-1/2 flex place-content-center items-center bg-black">
       <div>
         <div className="flex place-content-center -mb-1">
           <img src="/double-quote-white.svg" width={50} height={50} alt="double quote" priority="true"></img>
         </div>
-        <p className="text-center font-black text-white text-lg px-5 pb-7 fade-in-out">{words[currentWordIndex]}</p>
+        <p className="text-center font-black text-white text-lg px-5 fade-in-out">{words[currentWordIndex]}</p>
       </div>
     </div>
   )

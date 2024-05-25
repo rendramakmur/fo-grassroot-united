@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+import CountdownTimer from "./CowndownTimer"
 
 export default function GameCard({ data }) {
   const [date, setDate] = useState('')
@@ -40,12 +41,11 @@ export default function GameCard({ data }) {
 
   return (
     <div className="border shadow-md p-5 rounded-lg text-xsm my-5">
+      <div className="flex items-start">
+      </div>
       <div className="pb-4 w-full">
         <div className="flex items-center justify-between">
-          <p className=" text-lg font-black overflow-x-auto">{data?.venueName}</p>
-          <Link to={mapUrl} target="_blank" className="text-center mx-2 text-white text-xs">
-            <img src="/gmap.svg" className="shadow-md" width={50} height={50} alt="grassroot united fc logo" priority="true"></img>
-          </Link>
+          <p className="text-lg font-black overflow-x-auto">{data?.venueName}</p>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-2 mb-1">
@@ -76,8 +76,11 @@ export default function GameCard({ data }) {
           <p>{status}</p>
         </div>
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 space-x-2">
         <button className="text-white bg-black font-medium tracking-wider rounded-lg text-sm py-2.5 w-full text-center">Join</button>
+        <Link to={mapUrl} target="_blank" className="text-center text-white text-xs">
+          <img src="/gmap.svg" className="shadow-md" width={48} height={48} alt="grassroot united fc logo" priority="true"></img>
+        </Link>
       </div>
     </div>
   )
