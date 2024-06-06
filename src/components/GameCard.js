@@ -45,7 +45,7 @@ export default function GameCard({ data }) {
       </div>
       <div className="pb-4 w-full">
         <div className="flex items-center justify-between">
-          <p className="text-lg font-black overflow-x-auto">{data?.venueName}</p>
+          <p className="text-lg text-center font-black overflow-x-auto">{data?.venueName}</p>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-2 mb-1">
@@ -77,7 +77,7 @@ export default function GameCard({ data }) {
         </div>
       </div>
       <div className="flex justify-center mt-6 space-x-2">
-        <button className="text-white bg-black font-medium tracking-wider rounded-lg text-sm py-2.5 w-full text-center">Join</button>
+        <button className="text-white font-semibold tracking-wider rounded-lg text-sm py-2.5 w-full text-center animated-background bg-gradient-to-r from-black to-[#FF3130]">Join</button>
         <Link to={mapUrl} target="_blank" className="text-center text-white text-xs">
           <img src="/gmap.svg" className="shadow-md" width={48} height={48} alt="grassroot united fc logo" priority="true"></img>
         </Link>
